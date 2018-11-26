@@ -11,32 +11,32 @@
     </div>
   <% end %>
 
-  <div class="field">
+  <div class="field form-group">
     <%= form.label :first_name %>
-    <%= form.text_field :first_name, id: :user_first_name %>
+    <%= form.text_field :first_name, id: :user_first_name, class: "form-control" %>
   </div>
 
   <div class="field">
     <%= form.label :last_name %>
-    <%= form.text_field :last_name, id: :user_last_name %>
+    <%= form.text_field :last_name, id: :user_last_name, class: "form-control" %>
   </div>
 
   <div class="field">
     <%= form.label :email %>
-    <%= form.text_field :email, id: :user_email %>
+    <%= form.text_field :email, id: :user_email, class: "form-control" %>
   </div>
 
   <div class="field">
     <%= form.label :birthday %>
-    <%= form.date_select :birthday, id: :user_birthday %>
+    <%= form.date_select :birthday, id: :user_birthday, class: "form-control" %>
   </div>
 
   <div class="field">
     <%= form.label :nickname %>
-    <%= form.text_field :nickname, id: :user_nickname %>
+    <%= form.text_field :nickname, id: :user_nickname, class: "form-control" %>
   </div>
-
+<br><br>
   <div class="actions">
-    <%= form.submit %>
+    <%= form.submit class: "btn btn-success" %>
   </div>
 <% end %>

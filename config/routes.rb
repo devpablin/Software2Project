@@ -5,7 +5,7 @@ Rails.application.routes.draw do
   resources :pruebas
 
   resources :helados
-  root 'users#index'
+  root 'welcome#welcome'
   resources :users
 
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
