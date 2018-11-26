@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Sabor:</strong>
+  <%= @tortum.sabor %>
+</p>
+
+<p>
+  <strong>Porciones:</strong>
+  <%= @tortum.porciones %>
+</p>
+
+<p>
+  <strong>Precio:</strong>
+  <%= @tortum.precio %>
+</p>
+
+<p>
+  <strong>Tipo:</strong>
+  <%= @tortum.tipo %>
+</p>
+
+<%= link_to 'Edit', edit_tortum_path(@tortum) %> |
+<%= link_to 'Back', torta_path %>

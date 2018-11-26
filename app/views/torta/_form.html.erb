@@ -1,0 +1,37 @@
+<%= form_with(model: tortum, local: true) do |form| %>
+  <% if tortum.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(tortum.errors.count, "error") %> prohibited this tortum from being saved:</h2>
+
+      <ul>
+      <% tortum.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :sabor %>
+    <%= form.text_field :sabor, id: :tortum_sabor %>
+  </div>
+
+  <div class="field">
+    <%= form.label :porciones %>
+    <%= form.number_field :porciones, id: :tortum_porciones %>
+  </div>
+
+  <div class="field">
+    <%= form.label :precio %>
+    <%= form.text_field :precio, id: :tortum_precio %>
+  </div>
+
+  <div class="field">
+    <%= form.label :tipo %>
+    <%= form.text_field :tipo, id: :tortum_tipo %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

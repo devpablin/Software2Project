@@ -1,0 +1,33 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Torta</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Sabor</th>
+      <th>Porciones</th>
+      <th>Precio</th>
+      <th>Tipo</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @torta.each do |tortum| %>
+      <tr>
+        <td><%= tortum.sabor %></td>
+        <td><%= tortum.porciones %></td>
+        <td><%= tortum.precio %></td>
+        <td><%= tortum.tipo %></td>
+        <td><%= link_to 'Show', tortum %></td>
+        <td><%= link_to 'Edit', edit_tortum_path(tortum) %></td>
+        <td><%= link_to 'Destroy', tortum, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Tortum', new_tortum_path %>
