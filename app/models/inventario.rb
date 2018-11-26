@@ -3,9 +3,9 @@ class Inventario < ApplicationRecord
   validates :nombre, presence: true
   validates :descripcion, presence: true
   validates :tipo, presence: true
-  validates :precio, :format => { :with => /\A\d+(?:\.\d{0,2})?\z/ }, :numericality => {:greater_than => 0, :less_than => 1000}
+  validates :precio, :format => { :with => /\A\d+(?:\.\d{0,2})?\z/ }, :numericality => {:greater_than => 0, :less_than => 1000}, presence:true
   validates :marca, presence: true
-  validates :cantidad, :format => { :with => /\A\d+(?:\.\d{0,2})?\z/ }, :numericality => {:greater_than => 0, :less_than => 1000}
+  validates :cantidad, :format => { :with => /\A\d+(?:\.\d{0,2})?\z/ }, :numericality => {:greater_than => 0, :less_than => 1000}, presence:true
   validates :tipo_cantidad, presence: true
   validates :cod_barras, presence: true
   validate :expiration_date_cannot_be_in_the_future
@@ -18,7 +18,7 @@ class Inventario < ApplicationRecord
 
   def expiration_date_cannot_be_in_the_past
     if fecha_vencimiento.present? && fecha_vencimiento < Date.today
-      errors.add(:expiration_date, "can't be in the past")
+      errors.add(:fecha_vencimiento, "can't be in the past")
     end
   end
 end
