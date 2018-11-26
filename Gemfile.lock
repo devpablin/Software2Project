@@ -280,6 +280,7 @@ PLATFORMS
   x64-mingw32
 
 DEPENDENCIES
+  capybara
   coffee-rails (~> 4.2)
   coveralls
   cucumber-rails
