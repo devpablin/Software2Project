@@ -10,6 +10,8 @@ services:
 - postgresql
 notifications:
   email: false
+  slack:
+    secure: QmNzHmHT6rwBBbjoKLsB57wpc//A3JTUWAXgQ5TQX9wGXW+HakaiysSA6nj7hjBb1ckmvGGGXsnts0Mar4HtCFhxnSn55r38cLgGod/zxDr6fUB3pa3lwn9sBxVKyynkJILJhMYM4POq1WeUm53eeq82oRZkqHoETx/rYxYL0K7crY/Ax1FgTHu5GYgez5mlj651YsCVVL5ULlaWgn9G0P4wNwJFzWvKbSKN5TsvyqRW/j5Ahxp01HMe9t+N1lEKgyZUrCgJGrEYk1qYhYpkwylIYVs34PcenNQebbbUwGBHXZBpiVEmqpjkR9l6FaMWfHoWqJuC/61gUbsZ+GGsBCG2AU+hWKHouEuY2PeBrOJH/QLH505bb9GCW7Qtd+y0Ydh6NAdmJlDyGe4GS1YTOY+CrhQ7LBLlFkmgGKYQifd3gjJpVekIsSrOT5UXRjFOK+B9CsDC3CItTCjpYyDRHUPNE631OWbbYToGBSaKhcMbJf659gASzEd1Kd7YLPn+dzl8elLoRRpkb1FIu46G+3x5ZgI0H9deoTPjBxqiL85uXYhgVgqMPh4Rc/NQFu0SQAJBle/i9H7pGNLJtgDHDRs2RZA3LxImEG0FxFvAtGTlWRXJlEOBQ/Al7tHh3C6AeDGdH6CqnOmK57wtDn5fhhMOpCcqUDadgGLgrQTuP30=
 deploy:
   provider: heroku
   api_key:
@@ -20,4 +22,4 @@ deploy:
   on:
     repo: devpablin/Software2Project
   run:
-    - "rails db:migrate"
+  - rails db:migrate
