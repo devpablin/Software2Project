@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.describe "Helados", type: :request do
+RSpec.describe "[Requests] Helados", type: :request do
   describe "GET /helados" do
     it "existe la ruta de helados" do
       get helados_path
