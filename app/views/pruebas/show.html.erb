@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @prueba.name %>
+</p>
+
+<p>
+  <strong>Tipo:</strong>
+  <%= @prueba.tipo %>
+</p>
+
+<p>
+  <strong>Precio:</strong>
+  <%= @prueba.precio %>
+</p>
+
+<p>
+  <strong>Fecha vencimiento:</strong>
+  <%= @prueba.fecha_vencimiento %>
+</p>
+
+<%= link_to 'Edit', edit_prueba_path(@prueba) %> |
+<%= link_to 'Back', pruebas_path %>

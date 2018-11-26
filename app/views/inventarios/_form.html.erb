@@ -1,0 +1,67 @@
+<%= form_with(model: inventario, local: true) do |form| %>
+  <% if inventario.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(inventario.errors.count, "error") %> prohibited this inventario from being saved:</h2>
+
+      <ul>
+      <% inventario.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :nombre %>
+    <%= form.text_field :nombre, id: :inventario_nombre %>
+  </div>
+
+  <div class="field">
+    <%= form.label :descripcion %>
+    <%= form.text_field :descripcion, id: :inventario_descripcion %>
+  </div>
+
+  <div class="field">
+    <%= form.label :tipo %>
+    <%= form.text_field :tipo, id: :inventario_tipo %>
+  </div>
+
+  <div class="field">
+    <%= form.label :precio %>
+    <%= form.text_field :precio, id: :inventario_precio %>
+  </div>
+
+  <div class="field">
+    <%= form.label :marca %>
+    <%= form.text_field :marca, id: :inventario_marca %>
+  </div>
+
+  <div class="field">
+    <%= form.label :cantidad %>
+    <%= form.text_field :cantidad, id: :inventario_cantidad %>
+  </div>
+
+  <div class="field">
+    <%= form.label :tipo_cantidad %>
+    <%= form.text_field :tipo_cantidad, id: :inventario_tipo_cantidad %>
+  </div>
+
+  <div class="field">
+    <%= form.label :cod_barras %>
+    <%= form.text_field :cod_barras, id: :inventario_cod_barras %>
+  </div>
+
+  <div class="field">
+    <%= form.label :fecha_elaboracion %>
+    <%= form.date_select :fecha_elaboracion, id: :inventario_fecha_elaboracion %>
+  </div>
+
+  <div class="field">
+    <%= form.label :fecha_vencimiento %>
+    <%= form.date_select :fecha_vencimiento, id: :inventario_fecha_vencimiento %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
