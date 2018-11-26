@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :inventarios
+  resources :pruebas
   resources :helados
   root 'users#index'
   resources :users

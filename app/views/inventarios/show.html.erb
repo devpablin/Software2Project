@@ -1,0 +1,54 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Nombre:</strong>
+  <%= @inventario.nombre %>
+</p>
+
+<p>
+  <strong>Descripcion:</strong>
+  <%= @inventario.descripcion %>
+</p>
+
+<p>
+  <strong>Tipo:</strong>
+  <%= @inventario.tipo %>
+</p>
+
+<p>
+  <strong>Precio:</strong>
+  <%= @inventario.precio %>
+</p>
+
+<p>
+  <strong>Marca:</strong>
+  <%= @inventario.marca %>
+</p>
+
+<p>
+  <strong>Cantidad:</strong>
+  <%= @inventario.cantidad %>
+</p>
+
+<p>
+  <strong>Tipo cantidad:</strong>
+  <%= @inventario.tipo_cantidad %>
+</p>
+
+<p>
+  <strong>Cod barras:</strong>
+  <%= @inventario.cod_barras %>
+</p>
+
+<p>
+  <strong>Fecha elaboracion:</strong>
+  <%= @inventario.fecha_elaboracion %>
+</p>
+
+<p>
+  <strong>Fecha vencimiento:</strong>
+  <%= @inventario.fecha_vencimiento %>
+</p>
+
+<%= link_to 'Edit', edit_inventario_path(@inventario) %> |
+<%= link_to 'Back', inventarios_path %>
