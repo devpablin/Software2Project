@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :helados
   root 'users#index'
   resources :users
 
