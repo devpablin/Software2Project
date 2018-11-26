@@ -1,5 +1,8 @@
 # Software2Project
-Continuous Integration project on RoR
+[![Build Status](https://travis-ci.org/devpablin/Software2Project.svg?branch=master)](https://travis-ci.org/devpablin/Software2Project)
+[![Coverage Status](https://coveralls.io/repos/github/devpablin/Software2Project/badge.svg)](https://coveralls.io/github/devpablin/Software2Project)
+
+Continuous Integration project on RoR 
 
 ## Configuracion inicial
 El proyecto esta hecho en [Ruby on rails](https://rubyonrails.org/), para instalarlo pueden hacer clic [aca](http://installrails.com/steps/choose_os).
