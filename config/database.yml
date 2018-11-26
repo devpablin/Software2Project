@@ -24,8 +24,8 @@ default: &default
 development:
   <<: *default
   database: Software2Project_development
-  username: postgres
-  password: postgres
+  #username: postgres
+  #password: postgres
   #port: 5433
 
   # The specified database role being used to connect to postgres.
@@ -61,8 +61,8 @@ development:
 test: &test
   <<: *default
   database: Software2Project_test
-  username: postgres
-  password: postgres
+  #username: postgres
+  #password: postgres
   #port: 5433
 
 # As with config/secrets.yml, you never want to store sensitive information,
