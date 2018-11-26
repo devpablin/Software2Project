@@ -1,7 +1,7 @@
 require "rails_helper"
 
 RSpec.feature "Administracion de Tortas", type: :feature do
-  scenario "Creacion de una nueva torta" do
+  scenario "Permitir al usuario agregar tortas" do
     visit "/torta/new"
 
     fill_in "Sabor", with: "Frutilla"
