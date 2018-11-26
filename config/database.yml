@@ -26,6 +26,7 @@ development:
   database: Software2Project_development
   username: postgres
   password: postgres
+  port: 5433
 
   # The specified database role being used to connect to postgres.
   # To create additional roles in postgres see `$ createuser --help`.
