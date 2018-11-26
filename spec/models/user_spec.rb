@@ -7,5 +7,11 @@ RSpec.describe User, type: :model do
       user.valid?
       expect(user.errors[:first_name]).to include("can't be blank")
     end
+
+    it "que el mail sea correcto" do
+      user = User.new(email: "lolo")
+      user.valid?
+      expect(user.errors[:email]).to include("is invalid")
+    end
   end
 end

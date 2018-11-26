@@ -37,6 +37,7 @@ group :development, :test do
   gem 'database_cleaner'
   gem 'coveralls', require: false
   gem 'guard-rspec', require: false
+  gem 'capybara'
 end
 
 group :development do
